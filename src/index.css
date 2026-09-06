@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0f1720;
+  --color-ink-soft: #141f2b;
+  --color-ink-line: #26323f;
+  --color-paper: #eee8db;
+  --color-paper-dim: #a8a190;
+  --color-paper-faint: #7c7768;
+  --color-accent: #d9a441;
+  --color-accent-soft: #e7c17c;
+  --color-teal: #4fb3a4;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .rail-tick {
+    position: relative;
+  }
+  .rail-tick::before {
+    content: "";
+    position: absolute;
+    left: -1.05rem;
+    top: 0.55rem;
+    width: 0.55rem;
+    height: 1px;
+    background-color: var(--color-accent);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(238, 232, 219, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(238, 232, 219, 0.055) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
