@@ -40,7 +40,7 @@
 }
 
 @layer utilities {
-  .rail-tick {
+  .rail-tick { 
     position: relative;
   }
   .rail-tick::before {
