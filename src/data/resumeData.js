@@ -8,8 +8,8 @@ export const profile = {
   phone: "01770838776",
   github: "https://github.com/csfahim007",
   githubLabel: "github.com/csfahim007",
-  portfolio: "https://pinesaas.com",
-  portfolioLabel: "pinesaas.com",
+  portfolio: "https://portfolio.cloudafk.xyz",
+  portfolioLabel: "portfolio.cloudafk.xyz",
 };
 
 export const education = {
