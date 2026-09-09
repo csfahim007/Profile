@@ -96,6 +96,31 @@ export const projects = [
       "Hybrid product retrieval — intent parsing, structured filters, and candidate scoring.",
       "Transactional checkout with row-level locking, Stripe PaymentIntents/webhooks, and queued processing.",
     ],
+  }
+  ,
+    {
+    name: "FITbUZZ — Fitness Planner",
+    tag: "Personal project",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "GitHub Actions",
+    ],
+    url: "https://fitbuzz.cloudafk.xyz/",
+    description:
+      "A full-stack fitness planner for managing workouts, exercise plans, nutrition, and progress insights through a unified dashboard.",
+    points: [
+      "Workout planning with scheduling, exercise sets/reps/weight tracking, completion checkpoints, calorie tracking, and workout sharing.",
+      "Interactive dashboard with weekly calorie analytics, scheduled workout insights, monthly calendar planning, and nutrition summaries.",
+      "Secure JWT authentication with protected routes and Express middleware for validation, rate limiting, security headers, sanitization, and centralized error handling.",
+      "Production deployment with GitHub Actions, SSH-based VPS deployment, automated builds, health checks, and Supervisor-managed frontend and backend services.",
+    ],
   },
   {
     name: "News & Blogs Portal",
@@ -108,18 +133,7 @@ export const projects = [
       "Admin workspace for content, category, comment, and user management.",
       "Cloudinary media handling, deployed with Supervisor and Cloudflare Tunnel.",
     ],
-  },
-  {
-    name: "FITbUZZ — Fitness Planner",
-    tag: "Personal project",
-    stack: ["React", "Redux Toolkit", "Node.js", "MongoDB"],
-    url: "https://fitbuzz.cloudafk.xyz/",
-    description: "A fitness planning app for tracking workouts, nutrition, and progress over time.",
-    points: [
-      "JWT-protected REST APIs for workout tracking, exercise management, and nutrition logging.",
-      "Sharing and progress dashboards with Chart.js and Recharts visualizations.",
-    ],
-  },
+  }
 ];
 
 export const hackathons = [{ name: "Poridhi AI Hackathon", year: "2025" }];
