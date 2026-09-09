@@ -25,31 +25,78 @@ export const skillGroups = [
   },
   {
     label: "Frontend",
-    items: ["React", "Next.js", "Redux Toolkit", "Zustand", "Tailwind CSS", "HTML5", "CSS3"],
+    items: [
+      "React",
+      "Next.js",
+      "Redux Toolkit",
+      "Zustand",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+    ],
   },
   {
     label: "Backend",
-    items: ["Laravel", "Node.js", "Express.js", "REST APIs", "Authentication", "Authorization"],
+    items: [
+      "Laravel",
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Authentication",
+      "Authorization",
+    ],
   },
   {
     label: "Databases",
-    items: ["MySQL", "PostgreSQL", "MongoDB", "Prisma", "Mongoose"],
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Prisma",
+      "Mongoose",
+    ],
   },
   {
     label: "Infrastructure",
-    items: ["Redis", "Queues / Workers", "Docker", "NGINX", "GitHub Actions", "VPS", "cPanel"],
+    items: [
+      "Redis",
+      "Queues / Workers",
+      "Docker",
+      "NGINX",
+      "GitHub Actions",
+      "VPS",
+      "cPanel",
+    ],
   },
   {
     label: "Cloud & Services",
-    items: ["Cloudinary", "Stripe", "Google Auth", "Cloudflare", "n8n"],
+    items: [
+      "Cloudinary",
+      "Stripe",
+      "Google Auth",
+      "Cloudflare",
+      "n8n",
+    ],
   },
   {
     label: "AI / ML",
-    items: ["LLM API Integration", "RAG", "NLP", "Transformers", "AI Search"],
+    items: [
+      "LLM API Integration",
+      "RAG",
+      "NLP",
+      "Transformers",
+      "AI Search",
+    ],
   },
   {
     label: "Other",
-    items: ["Git", "API Design", "Responsive UI/UX", "SEO", "Real-Time Systems"],
+    items: [
+      "Git",
+      "API Design",
+      "Responsive UI/UX",
+      "SEO",
+      "Real-Time Systems",
+    ],
   },
 ];
 
@@ -70,36 +117,35 @@ export const experience = {
   },
 };
 
-export const projects = [  
+export const projects = [
   {
     name: "AI Commerce — E-Commerce Platform",
     tag: "Featured project",
     stack: [
-    "Laravel",
-    "React",
-    "TypeScript",
-    "MySQL",
-    "Redis",
-    "Docker",
-    "Stripe",
-    "Groq",
-    "n8n",
-    "NGINX",
-    "GitHub Actions",
+      "Laravel",
+      "React",
+      "TypeScript",
+      "MySQL",
+      "Redis",
+      "Docker",
+      "Stripe",
+      "Groq",
+      "n8n",
+      "NGINX",
+      "GitHub Actions",
     ],
     url: "https://ai-ecommerce-laravel.cloudafk.xyz/",
     description:
-    "A production-oriented AI-powered ecommerce platform combining a decoupled Laravel + React architecture with grounded AI product discovery, transactional checkout, payments, caching, queues, automation, and containerized CI/CD deployment.",
+      "A production-oriented AI-powered ecommerce platform combining a decoupled Laravel + React architecture with grounded AI product discovery, transactional checkout, payments, caching, queues, automation, and containerized CI/CD deployment.",
     points: [
-    "AI product assistant using Groq for natural-language intent understanding, followed by deterministic database retrieval and scoring to keep product availability, pricing, stock, and recommendations grounded in real ecommerce data.",
-    "Production-grade checkout with database transactions, row-level inventory locking, Stripe PaymentIntents and signed webhooks, preventing inconsistent stock and untrusted client-side payment state.",
-    "Scalable backend architecture with versioned REST APIs, service-layer business logic, Laravel Sanctum authentication, Redis caching, queued jobs, asynchronous order notifications, Cloudinary media management, and n8n workflow automation.",
-    "Containerized deployment with Docker and NGINX, automated GitHub Actions CI/CD, independent React frontend and Laravel API services, background queue workers, and production-oriented infrastructure.",
+      "AI product assistant using Groq for natural-language intent understanding, followed by deterministic database retrieval and scoring to keep product availability, pricing, stock, and recommendations grounded in real ecommerce data.",
+      "Production-grade checkout with database transactions, row-level inventory locking, Stripe PaymentIntents and signed webhooks, preventing inconsistent stock and untrusted client-side payment state.",
+      "Scalable backend architecture with versioned REST APIs, service-layer business logic, Laravel Sanctum authentication, Redis caching, queued jobs, asynchronous order notifications, Cloudinary media management, and n8n workflow automation.",
+      "Containerized deployment with Docker and NGINX, automated GitHub Actions CI/CD, independent React frontend and Laravel API services, background queue workers, and production-oriented infrastructure.",
     ],
-    }
+  },
 
-  ,
-    {
+  {
     name: "FITbUZZ — Fitness Planner",
     tag: "Personal project",
     stack: [
@@ -123,6 +169,7 @@ export const projects = [
       "Production deployment with GitHub Actions, SSH-based VPS deployment, automated builds, health checks, and Supervisor-managed frontend and backend services.",
     ],
   },
+
   {
     name: "SMEcube — CRM Platform",
     tag: "Internship project",
@@ -136,20 +183,40 @@ export const projects = [
       "Fully dynamic admin panel to manage every page and content element site-wide.",
     ],
   },
+
   {
     name: "News & Blogs Portal",
     tag: "Personal project",
-    stack: ["React 19", "TypeScript", "Express", "Prisma","MongoDB"],
+    stack: [
+      "React 19",
+      "TypeScript",
+      "Express",
+      "Prisma",
+      "MongoDB",
+    ],
     url: "https://itms.cloudafk.xyz/",
-    description: "A full-stack publishing platform with a typed backend and an editorial admin workspace.",
+    description:
+      "A full-stack publishing platform with a typed backend and an editorial admin workspace.",
     points: [
       "Publishing, categories, ratings, comments, and newsletter subscriptions with JWT auth.",
       "Admin workspace for content, category, comment, and user management.",
       "Cloudinary media handling, deployed with Supervisor and Cloudflare Tunnel.",
     ],
-  }
+  },
 ];
 
-export const hackathons = [{ name: "Poridhi AI Hackathon", year: "2025" }];
+export const hackathons = [
+  {
+    name: "Poridhi AI Hackathon",
+    year: "2025",
+  },
+  {
+    name: "International Blockchain Olympiad",
+    year: "2023",
+  },
+];
 
-export const interests = ["Coding & problem solving", "Travelling"];
+export const interests = [
+  "Coding & problem solving",
+  "Travelling",
+];
