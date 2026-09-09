@@ -70,33 +70,34 @@ export const experience = {
   },
 };
 
-export const projects = [
+export const projects = [  
   {
-    name: "SMEcube — CRM Platform",
-    tag: "Internship project",
-    stack: ["Laravel", "React", "MySQL"],
-    url: "https://smecube.com/",
-    description:
-      "Independently built the full backend of a production CRM now live in daily use.",
-    points: [
-      "OTP and Google Authentication with role-based access for admin, staff, and client accounts.",
-      "Real-time chat and support-ticketing system for client-to-admin communication.",
-      "Fully dynamic admin panel to manage every page and content element site-wide.",
+    name: "AI Commerce — E-Commerce Platform",
+    tag: "Featured project",
+    stack: [
+    "Laravel",
+    "React",
+    "TypeScript",
+    "MySQL",
+    "Redis",
+    "Docker",
+    "Stripe",
+    "Groq",
+    "n8n",
+    "NGINX",
+    "GitHub Actions",
     ],
-  },
-  {
-    name: "AI E-Commerce Platform",
-    tag: "Personal project",
-    stack: ["Laravel", "React", "Redis", "Docker", "Groq LLM"],
     url: "https://ai-ecommerce-laravel.cloudafk.xyz/",
     description:
-      "A production-oriented store with an AI product assistant layered over deterministic, database-backed pricing and stock.",
+    "A production-oriented AI-powered ecommerce platform combining a decoupled Laravel + React architecture with grounded AI product discovery, transactional checkout, payments, caching, queues, automation, and containerized CI/CD deployment.",
     points: [
-      "Versioned REST APIs with service-layer architecture, auth, validation, and transactions.",
-      "Hybrid product retrieval — intent parsing, structured filters, and candidate scoring.",
-      "Transactional checkout with row-level locking, Stripe PaymentIntents/webhooks, and queued processing.",
+    "AI product assistant using Groq for natural-language intent understanding, followed by deterministic database retrieval and scoring to keep product availability, pricing, stock, and recommendations grounded in real ecommerce data.",
+    "Production-grade checkout with database transactions, row-level inventory locking, Stripe PaymentIntents and signed webhooks, preventing inconsistent stock and untrusted client-side payment state.",
+    "Scalable backend architecture with versioned REST APIs, service-layer business logic, Laravel Sanctum authentication, Redis caching, queued jobs, asynchronous order notifications, Cloudinary media management, and n8n workflow automation.",
+    "Containerized deployment with Docker and NGINX, automated GitHub Actions CI/CD, independent React frontend and Laravel API services, background queue workers, and production-oriented infrastructure.",
     ],
-  }
+    }
+
   ,
     {
     name: "FITbUZZ — Fitness Planner",
@@ -123,9 +124,22 @@ export const projects = [
     ],
   },
   {
+    name: "SMEcube — CRM Platform",
+    tag: "Internship project",
+    stack: ["Laravel", "React", "MySQL"],
+    url: "https://smecube.com/",
+    description:
+      "Independently built the full backend of a production CRM now live in daily use.",
+    points: [
+      "OTP and Google Authentication with role-based access for admin, staff, and client accounts.",
+      "Real-time chat and support-ticketing system for client-to-admin communication.",
+      "Fully dynamic admin panel to manage every page and content element site-wide.",
+    ],
+  },
+  {
     name: "News & Blogs Portal",
     tag: "Personal project",
-    stack: ["React 19", "TypeScript", "Express", "Prisma"],
+    stack: ["React 19", "TypeScript", "Express", "Prisma","MongoDB"],
     url: "https://itms.cloudafk.xyz/",
     description: "A full-stack publishing platform with a typed backend and an editorial admin workspace.",
     points: [
