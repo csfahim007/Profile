@@ -22,11 +22,11 @@ export default function Hero() {
               Full-Stack Engineer, based in {profile.location}
             </p>
 
-            <h1 className="mt-5 max-w-3xl font-display text-[2.6rem] leading-[1.08] tracking-tight text-paper sm:text-6xl">
+            <h1 className="mt-5 max-w-3xl font-display text-[2.6rem] leading-[1.08] tracking-tight text-paper-bright sm:text-6xl">
               {profile.name}
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper-dim sm:text-xl">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper-bright sm:text-xl">
               {profile.tagline}
             </p>
 
@@ -40,7 +40,7 @@ export default function Hero() {
 
               <a
                 href="#contact"
-                className="inline-flex items-center rounded-full border border-ink-line px-5 py-2.5 text-paper transition-colors hover:border-accent hover:text-accent"
+                className="inline-flex items-center rounded-full border border-ink-line px-5 py-2.5 text-paper-bright transition-colors hover:border-accent hover:text-accent"
               >
                 Get in touch
               </a>
@@ -54,59 +54,63 @@ export default function Hero() {
           />
         </div>
 
-<dl className="mt-16 grid max-w-5xl grid-cols-2 gap-y-6 border-t border-ink-line pt-6 font-mono text-[13px] sm:grid-cols-4 sm:justify-between">
-  {/* Email */}
-  <div>
-    <dt className="text-paper-faint">Email</dt>
-    <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper">
-      <a
-        href={`mailto:${profile.email}`}
-        className="hover:text-accent"
-      >
-        {profile.email}
-      </a>
-    </dd>
-  </div>
+        <dl className="mt-16 grid max-w-5xl grid-cols-2 gap-y-6 border-t border-ink-line pt-6 font-mono text-[13px] sm:grid-cols-4 sm:justify-between">
+          {/* Email */}
+          <div>
+            <dt className="text-paper-faint">Email</dt>
 
-  {/* Phone — 5px right */}
-  <div className="sm:translate-x-[5px]">
-    <dt className="text-paper-faint">Phone</dt>
-    <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper">
-      {profile.phone}
-    </dd>
-  </div>
+            <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper-bright">
+              <a
+                href={`mailto:${profile.email}`}
+                className="hover:text-accent"
+              >
+                {profile.email}
+              </a>
+            </dd>
+          </div>
 
-  {/* GitHub — 5px left */}
-  <div className="sm:-translate-x-[5px]">
-    <dt className="text-paper-faint">GitHub</dt>
-    <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper">
-      <a
-        href={profile.github}
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-accent"
-      >
-        {profile.githubLabel}
-      </a>
-    </dd>
-  </div>
+          {/* Phone — 5px right */}
+          <div className="sm:translate-x-[5px]">
+            <dt className="text-paper-faint">Phone</dt>
 
-  {/* Portfolio */}
-  <div>
-    <dt className="text-paper-faint">Portfolio</dt>
-    <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper">
-      <a
-        href="https://portfolio.cloudafk.xyz"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-accent"
-      >
-        portfolio.cloudafk.xyz
-      </a>
-    </dd>
-  </div>
-</dl>
-</div>
+            <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper-bright">
+              {profile.phone}
+            </dd>
+          </div>
+
+          {/* GitHub — 5px left */}
+          <div className="sm:-translate-x-[5px]">
+            <dt className="text-paper-faint">GitHub</dt>
+
+            <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper-bright">
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-accent"
+              >
+                {profile.githubLabel}
+              </a>
+            </dd>
+          </div>
+
+          {/* Portfolio */}
+          <div>
+            <dt className="text-paper-faint">Portfolio</dt>
+
+            <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper-bright">
+              <a
+                href="https://portfolio.cloudafk.xyz"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-accent"
+              >
+                portfolio.cloudafk.xyz
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
     </section>
   );
 }

@@ -1,4 +1,3 @@
-
 import { education, interests } from "../data/resumeData";
 
 export default function About() {
@@ -12,7 +11,7 @@ export default function About() {
               A bit about the work
             </h2>
 
-            <p className="mt-4 text-[19px] leading-relaxed text-paper-dim">
+            <p className="mt-4 text-[19px] leading-relaxed text-paper-bright">
               I like taking a product from a database schema to a deployed URL —
               writing the service layer, wiring authentication and payments, and
               shipping an admin panel non-technical teammates can actually use.
@@ -27,11 +26,11 @@ export default function About() {
                 Education
               </h3>
 
-              <p className="mt-2 text-[19px] font-medium text-paper">
+              <p className="mt-2 text-[19px] font-medium text-paper-bright">
                 {education.school}
               </p>
 
-              <p className="text-[17px] text-paper-dim">
+              <p className="text-[17px] text-paper-bright">
                 {education.degree}
               </p>
 
@@ -45,7 +44,7 @@ export default function About() {
                 Outside of work
               </h3>
 
-              <ul className="mt-2 space-y-1 text-[19px] text-paper-dim">
+              <ul className="mt-2 space-y-1 text-[19px] text-paper-bright">
                 {interests.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -57,4 +56,3 @@ export default function About() {
     </section>
   );
 }
-

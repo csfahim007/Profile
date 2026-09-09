@@ -21,7 +21,7 @@ export default function Skills() {
                 {group.label}
               </h3>
 
-              <ul className="mt-3 space-y-1.5 text-[18px] leading-relaxed text-paper-dim">
+              <ul className="mt-3 space-y-1.5 text-[18px] leading-relaxed text-paper-bright">
                 {group.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
