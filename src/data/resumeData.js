@@ -15,7 +15,7 @@ export const profile = {
 export const education = {
   school: "BRAC University",
   location: "Dhaka, Bangladesh",
-  degree: "BSc in Computer Science",
+  degree: "BSc in Computer Science(final year)",
 };
 
 export const skillGroups = [
@@ -95,7 +95,7 @@ export const skillGroups = [
       "API Design",
       "Responsive UI/UX",
       "SEO",
-      "Real-Time Systems",
+      "Real-Time Systems"
     ],
   },
 ];
@@ -132,7 +132,8 @@ export const projects = [
       "Groq",
       "n8n",
       "NGINX",
-      "GitHub Actions",
+      "GitHub Actions CI-CD",
+      "VPS deployed"
     ],
     url: "https://ai-ecommerce-laravel.cloudafk.xyz/",
     description:
@@ -157,7 +158,8 @@ export const projects = [
       "Express.js",
       "MongoDB",
       "JWT",
-      "GitHub Actions",
+      "GitHub Actions CI-CD",
+      "VPS deployed"
     ],
     url: "https://fitbuzz.cloudafk.xyz/",
     description:
@@ -173,7 +175,7 @@ export const projects = [
   {
     name: "SMEcube — CRM Platform",
     tag: "Internship project",
-    stack: ["Laravel", "React", "MySQL"],
+    stack: ["Laravel", "React", "MySQL", "cPanel Deployed"],
     url: "https://smecube.com/",
     description:
       "Independently built the full backend of a production CRM now live in daily use.",
@@ -193,6 +195,9 @@ export const projects = [
       "Express",
       "Prisma",
       "MongoDB",
+      "Github Actions CI-CD",
+      "VPS deployed"
+
     ],
     url: "https://itms.cloudafk.xyz/",
     description:
