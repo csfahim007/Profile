@@ -8,6 +8,8 @@ export const profile = {
   phone: "01770838776",
   github: "https://github.com/csfahim007",
   githubLabel: "github.com/csfahim007",
+  linkedin: "https://www.linkedin.com/in/fahim-afk",
+  linkedinLabel: "linkedin.com/in/fahim-afk",
   portfolio: "https://portfolio.cloudafk.xyz",
   portfolioLabel: "portfolio.cloudafk.xyz",
 };
