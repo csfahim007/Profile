@@ -7,9 +7,9 @@ export const profile = {
   email: "csfahim007@gmail.com",
   phone: "01770838776",
   github: "https://github.com/csfahim007",
-  githubLabel: "github.com/csfahim007",
+  githubLabel: "github.com",
   linkedin: "https://www.linkedin.com/in/fahim-afk",
-  linkedinLabel: "linkedin.com/in/fahim-afk",
+  linkedinLabel: "linkedin",
   portfolio: "https://portfolio.cloudafk.xyz",
   portfolioLabel: "portfolio.cloudafk.xyz",
 };

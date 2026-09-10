@@ -15,37 +15,32 @@ export default function Contact() {
           >
             {profile.email}
           </a>
+
           <a
             href={`tel:${profile.phone}`}
             className="inline-flex items-center rounded-full border border-ink-line px-6 py-3 text-paper transition-colors hover:border-accent hover:text-accent"
           >
             {profile.phone}
           </a>
+
           <a
-            href={`tel:${profile.github}`}
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center rounded-full border border-ink-line px-6 py-3 text-paper transition-colors hover:border-accent hover:text-accent"
           >
-            github
-          </a>
-          <a
-            href={`tel:${profile.linkedin}`}
-            className="inline-flex items-center rounded-full border border-ink-line px-6 py-3 text-paper transition-colors hover:border-accent hover:text-accent"
-          >
-            linkedin
-          </a>
-        </div>
-
-       
-      
-
-      <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[13px] text-paper-dim">
-          <a href={profile.linkedin} target="_blank" rel="noreferrer" className="hover:text-accent">
             {profile.linkedinLabel}
           </a>
-          <a href={profile.portfolio} target="_blank" rel="noreferrer" className="hover:text-accent">
-            {profile.portfolioLabel}
+
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center rounded-full border border-ink-line px-6 py-3 text-paper transition-colors hover:border-accent hover:text-accent"
+          >
+            {profile.githubLabel}
           </a>
-      </div>
+        </div>
       </div>
     </section>
   );
