@@ -21,16 +21,21 @@ export default function Contact() {
           >
             {profile.phone}
           </a>
+          <a
+            href={`tel:${profile.github}`}
+            className="inline-flex items-center rounded-full border border-ink-line px-6 py-3 text-paper transition-colors hover:border-accent hover:text-accent"
+          >
+            github
+          </a>
+          <a
+            href={`tel:${profile.linkedin}`}
+            className="inline-flex items-center rounded-full border border-ink-line px-6 py-3 text-paper transition-colors hover:border-accent hover:text-accent"
+          >
+            linkedin
+          </a>
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[13px] text-paper-dim">
-          <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-accent">
-            {profile.githubLabel}
-          </a>
-          <a href={profile.portfolio} target="_blank" rel="noreferrer" className="hover:text-accent">
-            {profile.portfolioLabel}
-          </a>
-        </div>
+       
       
 
       <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[13px] text-paper-dim">

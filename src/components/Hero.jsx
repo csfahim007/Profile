@@ -94,21 +94,7 @@ export default function Hero() {
             </dd>
           </div>
 
-          {/* Portfolio */}
-          <div>
-            <dt className="text-paper-faint">Portfolio</dt>
 
-            <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper-bright">
-              <a
-                href="https://portfolio.cloudafk.xyz"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-accent"
-              >
-                portfolio.cloudafk.xyz
-              </a>
-            </dd>
-          </div>
           <div>
             <dt className="text-paper-faint">Linkedin</dt>
 
