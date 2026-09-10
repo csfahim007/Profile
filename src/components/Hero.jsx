@@ -109,6 +109,20 @@ export default function Hero() {
               </a>
             </dd>
           </div>
+          <div>
+            <dt className="text-paper-faint">Linkedin</dt>
+
+            <dd className="mt-[5px] whitespace-nowrap text-[16px] text-paper-bright">
+              <a
+                href="https://www.linkedin.com/in/fahim-afk"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-accent"
+              >
+                linkedin 
+              </a>
+            </dd>
+          </div>
         </dl>
       </div>
     </section>

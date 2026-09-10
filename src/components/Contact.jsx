@@ -31,6 +31,16 @@ export default function Contact() {
             {profile.portfolioLabel}
           </a>
         </div>
+      
+
+      <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[13px] text-paper-dim">
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" className="hover:text-accent">
+            {profile.linkedinLabel}
+          </a>
+          <a href={profile.portfolio} target="_blank" rel="noreferrer" className="hover:text-accent">
+            {profile.portfolioLabel}
+          </a>
+      </div>
       </div>
     </section>
   );
